@@ -1,0 +1,213 @@
+{% load staticfiles %}
+
+<div class="container marketing">
+{% block content %}
+
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-responsive" src="{% static 'img/Banker.jpg' %}" alt="Generic placeholder image" width="200" height="140">
+          <h2> IBPS Exam Question</h2>
+            <p>Students will find all kinds of questions for <b>IBPS</b> exam
+              preparation.They can practice all kinds of question that have
+          asked before in the exam.We will try to arrange various kinds of online exam as well for students so that they will be able to know
+          their preparation for exams</p>
+          <p><a class="btn btn-primary" href="{% url 'ibps' %}" role="button">View details &raquo;</a></p><hr style="width: 200px";">
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img style="position: relative;margin-left: 80px;margin-top: -10px" class="img-responsive" src="{% static 'img/med.jpg' %}" alt="Generic placeholder image" width="150" height="140">
+          <h2>AIPMT Question</h2>
+          <p>Solving previous years’ papers gives you confidence and enhances your examination temperament. Solving more and more questions in a limited time is a must to do in order to ready yourself for the final exam. By solving sample papers on a regular basis, students get familiar with the exam pattern and get an overview that how the actual AIPMT exam would be.</p>
+          <p><a class="btn btn-default" href="{% url 'aipmt' %}" role="button">View details &raquo;</a></p><hr style="width: 200px";">
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img style="position: relative;margin-left: 80px;margin-top: -10px" class="img-responsive" src="{% static 'img/INDIAN.jpg' %}" alt="Generic placeholder image" width="150" height="140">
+          <h2>Indian Civil Services </h2>
+          <p>The Civil Services Examination (CSE) is a nationwide competitive examination in India conducted by the Union Public Service Commission for recruitment to various Civil Services of the Government of India, including the Indian Administrative Service (IAS), Indian Foreign Service (IFS), Indian Police Service (IPS) among others</p>
+          <p><a class="btn btn-default" href="{% url 'ics' %}" role="button">View details &raquo;</a></p><hr style="width: 200px";">
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 style="position: relative; margin-top: -10px" class="featurette-heading"> <span class="text-muted">Cat Practice Question</span></h2>
+          <br><p class="lead">CAT is one of the most important exams for admission to MBA programs in IIMs and other B-Schools. . The key to score good marks in CAT is preparation beforehand and regular practice. Time management is also very important for scoring good marks in any competitive exam.</p>
+        </div>
+        <div class="col-md-5">
+          <img  class="featurette-image img-responsive center-block" src="{% static 'img/preflex.jpg' %}" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2  style="position: relative; margin-top: -10px" class="featurette-heading"> <span class="text-muted">JEE Main Practice Question</span></h2>
+         <br> <p class="lead">No matter how many coaching classes you join or how many more study materials / books you buy, you have to spend time studying the materials and lecture notes.Self-study is one of the most important aspects of your JEE Main.Now comes the most important part after you finish studying – problem solving and concept building. You should solve as many problems as you can after going through a topic</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="{% static 'img/img1482821535001-59-rs-high-webp.jpg' %}" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 style="position: relative; margin-top: -10px" class="featurette-heading"> <span class="text-muted">Solved Paper For Bank PO</span></h2>
+         <br> <p class="lead">Accuracy and speed, both are the most important aspect for any exam. This speed and accuracy always come when you practice a lot on a daily basis. Unless you don't know the pattern of any exam where you will sit for it, you will surely face failure. Solving past year papers tells you both pattern as well as what is the difficulty and level of the questions that are being assked, helping you develop accuracy when you will solve it and also you will develop a speed.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="{% static 'img/solved.jpg' %}" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+   <br><br> <br> <br><br> <br>
+			<section id="testimonials" class="parallax">
+				<div class="overlay">
+					<div class="container">
+						<div class="row">
+
+							<div class="sec-title text-center white wow animated fadeInDown">
+                                  <br><br> <br> <br><br> <br>
+								<h2>What people say</h2>
+							</div>
+
+							<div id="testimonial" class=" wow animated fadeInUp">
+								<div class="testimonial-item text-center">
+									<img src="{% static 'img/member-1.jpg' %}" alt="Our Clients">
+									<div class="clearfix">
+										<span>Katty Flower</span>
+										<p>This is a very good Initiative done by PracQtise to help all the people who does not have enough resources to compete with the outside world.Keep Rocking Guys</p>
+									</div>
+								</div>
+								<div class="testimonial-item text-center">
+									<img src="{% static 'img/download.jpg' %}" alt="Our Clients">
+									<div class="clearfix">
+										<span>Mark Zuckerberg</span>
+										<p>Success always hugs you in private.But failure always slaps you in public and thats what we call life  and PracQtise is one step closer to irradicate this failure</p>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end Testimonial section -->
+
+			<!-- Price section -->
+                <br><br> <br> <br><br> <br>
+
+			<section id="price">
+				<div class="container">
+					<div class="row">
+
+						<div class="sec-title text-center wow animated fadeInDown">
+							<h2>Price</h2>
+							<p>Our price for your preparation</p>
+						</div>
+
+						<div class="col-md-4 wow animated fadeInUp">
+							<div class="price-table text-center">
+								<span>Silver</span>
+								<div class="value">
+									<span>Rs</span>
+									<span>500</span><br>
+									<span>month</span>
+								</div>
+								<ul>
+									<li>Free Trial</li>
+									<li>Free Trial</li>
+									<li>Free Trial</li>
+									<li>Free Trial</li>
+									<li><a href="{% url 'account_signup' %}">sign up</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-4 wow animated fadeInUp" data-wow-delay="0.4s">
+							<div class="price-table featured text-center">
+								<span>Gold</span>
+								<div class="value">
+									<span>Rs</span>
+									<span>1,000</span><br>
+									<span>month</span>
+								</div>
+								<ul>
+									<li>No Bonus Points</li>
+									<li>No Bonus Points</li>
+									<li>No Bonus Points</li>
+									<li>No Bonus Points</li>
+									<li><a href="{% url 'account_signup' %}">sign up</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-4 wow animated fadeInUp" data-wow-delay="0.8s">
+							<div class="price-table text-center">
+								<span>Diamond</span>
+								<div class="value">
+									<span>Rs</span>
+									<span>1500</span><br>
+									<span>month</span>
+								</div>
+								<ul>
+									<li>All Bonus Points</li>
+									<li>All Bonus Points</li>
+									<li>All Bonus Points</li>
+									<li>All Bonus Points</li>
+									<li><a href="{% url 'account_signup' %}">sign up</a></li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+
+{% endblock %}]
+
+
+
+
+
+
+
+
+
+
