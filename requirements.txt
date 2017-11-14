@@ -1,19 +1,13 @@
 
-
-pip install certifi==2017.11.5
-pip install chardet==3.0.4
-pip install Django==1.11.7
-pip install django-allauth==0.34.0
-pip install django-crispy-forms==1.7.0
-pip install idna==2.6
-pip install oauthlib==2.0.6
-pip install python-openid==2.2.5
-pip install pytz==2017.3
-pip install requests==2.18.4
-pip install requests-oauthlib==0.8.0
-pip install urllib3==1.22
-
-First we have to create virtualenv then we have to resolve each dependency one by one
-
-pip freeze
-
+certifi==2017.11.5
+chardet==3.0.4
+Django==1.11.7
+django-allauth==0.34.0
+django-crispy-forms==1.7.0
+idna==2.6
+oauthlib==2.0.6
+python-openid==2.2.5
+pytz==2017.3
+requests==2.18.4
+requests-oauthlib==0.8.0
+urllib3==1.22
