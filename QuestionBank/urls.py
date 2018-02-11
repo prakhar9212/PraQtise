@@ -20,6 +20,8 @@ from django.conf.urls.static import static
 from procfile import views as procfile_views
 from contact import views as contact_views
 
+
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', procfile_views.home, name='home'),
@@ -34,11 +36,15 @@ urlpatterns = [
     url(r'^gk2016/', procfile_views.gk2016, name='gk2016'),
     url(r'^gk2015/', procfile_views.gk2015, name='gk2015'),
     url(r'^contact/', contact_views.contact, name='contact'),
-    url(r'^fresh/', procfile_views.fresh, name='fresh'),
-    url(r'^joining/', procfile_views.joining, name='joining'),
-    url(r'^notification/', procfile_views.notification, name='notification'),
+    url(r'^payment/', procfile_views.payment, name='payment'),
+    url(r'^choice_of_course/', procfile_views.choice_of_course, name='choice_of_course'),
 
     url(r'^accounts/', include('allauth.urls')),
+
+    url(r'^posts/',include("blog.urls",namespace="posts")),
+    url(r'^api/posts/', include("blog.api.urls", namespace="posts-api")),
+    url(r'^api/comments/', include("comments.api.urls", namespace="comments-api")),
+    url(r'^api/users/', include("accounts.api.urls", namespace="users-api")),
 
 ]
 
