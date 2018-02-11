@@ -1,0 +1,88 @@
+{% extends 'account/base.html' %}
+{% load staticfiles %}
+
+
+{% load crispy_forms_tags %}
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Choice Course" %}{% endblock %}
+
+
+
+
+{% block content1 %}
+  <link rel="stylesheet" href="{% static 'css/choice1.css' %}">
+<br><br><br><br><br><br>
+
+
+								<h3 class="headingTop text-center">Select Your Course</h3>
+    <br><br>
+
+
+
+<div class="container">
+  <!-- Example row of columns -->
+
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h2 style="text-align: left;">AIPMT</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#" class="btn btn-sm animated-button victoria-one">AIPMT</a> </div>
+  </div>
+
+
+
+  <div  class="row">
+    <div style="margin-top: -190px;text-align: right" class="col-md-12 text-center">
+      <h2  class="mrng-60-top">BANK</h2>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div style="margin-top: -85px;position: absolute; right: 0;" class="col-md-3 col-sm-3 col-xs-6"> <a  href="#" class="btn btn-sm animated-button sandy-one">BANK</a> </div>
+
+  </div>
+
+
+
+
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h2  style="text-align: left;" class="mrng-60-top">MBA</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#" class="btn btn-sm animated-button gibson-one">MBA</a> </div>
+
+  </div>
+
+
+
+  <div class="row">
+    <div  style="margin-top: -200px;text-align: right" class="col-md-12 text-center">
+      <h2  class="mrng-60-top">IIT</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div   style="margin-top: -75px;position: absolute; right: 0"; class="col-md-3 col-sm-3 col-xs-6"> <a href="#" class="btn btn-sm animated-button thar-one">IIT</a> </div>
+
+  </div>
+</div>
+
+
+
+
+<br><br><br><br><br><br>
+{% endblock %}

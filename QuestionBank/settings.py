@@ -43,15 +43,20 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'procfile',
+    'comments',
     'contact',
+    'markdown_deux',
+    'pagedown',
+    'blog',
     'crispy_forms',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
 
-
+    'rest_framework',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -77,6 +82,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+
+
             ],
         },
     },
@@ -95,8 +102,6 @@ AUTHENTICATION_BACKENDS = (
 WSGI_APPLICATION = 'QuestionBank.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
 DATABASES = {
     'default': {
@@ -139,8 +144,9 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.10/howto/static-files/
+
+
+
 
 STATIC_URL = '/static/'
 if DEBUG:
@@ -154,7 +160,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap3'
 SITE_ID = 1
 
 LOGIN_URL='/accounts/login/'
-LOGIN_REDIRECT_URL='/'
+LOGIN_REDIRECT_URL='/choice_of_course'
 
 ACCOUNT_AUTHENTICATION_METHOD='username_email'
 ACCOUNT_CONFIRM_EMAIL_ON_GET=False
@@ -181,3 +187,20 @@ ACCOUNT_USERNAME_REQUIRED =True
 ACCOUNT_PASSWORD_INPUT_RENDER_VALUE =False
 ACCOUNT_PASSWORD_MIN_LENGTH=6
 ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION =False
+
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',
+        'rest_framework.renderers.BrowsableAPIRenderer',
+
+    ),
+
+    '"DEFAULT_AUTHENTICATION_CLASSES':(
+        ' rest_framework.authentication.SessionAuthentication',
+    ),
+     'DEFAULT_PERMISSION_CLASSES':(
+        'rest_framework.permissions.IsAuthenticatedOrReadOnly',
+      )
+}

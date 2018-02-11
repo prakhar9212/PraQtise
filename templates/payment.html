@@ -1,10 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+
+{% extends "account/base.html" %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Payment Portal" %}{% endblock %}
+
+{% block content %}
+
+<br><br><br><br>
+
+
+
+
+
+
+
+ <form  target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+
+ <br><br><br><br><br><br>
+      <link rel="stylesheet" href="{% static 'css/choice.css' %}">
+    <div class="container">
+	<div class="row">
+		<div class="paymentCont">
+						<div class="headingWrap">
+								<h3 class="headingTop text-center">Select Your Payment Method</h3>
+
+						</div>
+						<div class="paymentWrap">
+							<div class="btn-group paymentBtnGroup btn-group-justified" data-toggle="buttons">
+					            <label class="btn paymentMethod active">
+                                    <div class="method visa"></div>
+                                     <input type="radio" name="options" checked>
+					            </label>
+					            <label class="btn paymentMethod">
+					            	<div class="method master-card"></div>
+					                <input type="radio" name="options">
+					            </label>
+					            <label class="btn paymentMethod">
+				            		<div class="method amex"></div>
+					                <input type="radio" name="options">
+					            </label>
+					             <label class="btn paymentMethod">
+				             		<div class="method vishwa"></div>
+					                <input type="radio" name="options">
+					            </label>
+					            <label class="btn paymentMethod">
+				            		<div class="method ez-cash"></div>
+					                <input type="radio" name="options">
+					            </label>
+
+					        </div>
+						</div>
+						<div class="footerNavWrap clearfix">
+								<div class="btn btn-success pull-left btn-fyi">   <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1"></div>
+
+                         <div class="btn btn-success pull-right btn-fyi">   <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+			</div>	</div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <br>
+
+
+
+
+
+        <P><h3 style="text-align: center">or</h3></P>
+
+
+
+
+
+ <br><br><br><br>
+            <div style="margin-left: 500px">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="7253FSNDZE5SL">
+<table>
+<tr><td><input type="hidden" name="on0" value="Course">Course</td></tr><tr><td><br>
+    <select name="os0">
+
+	<option value="Silver">Silver $8.00 USD</option>
+	<option value="Gold">Gold $16.00 USD</option>
+	<option value="Diamond">Diamond $24.00 USD</option>
+</select> </td></tr><br>
+<tr><td><br><input type="hidden" name="on1" value="Course Name">Course Name</td></tr><tr><td><br>
+    <select name="os1">
+	<option value="Silver">Silver </option>
+	<option value="Gold">Gold </option>
+	<option value="Diamond">Diamond </option>
+</select>  </td></tr>
+
+</table>
+<input type="hidden" name="currency_code" value="USD">
+     <br>
+<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+
+            </div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+{% endblock %}
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

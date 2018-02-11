@@ -29,6 +29,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+      <script src="{% static 'jquery/jquery.min.js' %}"></script>
     <!-- Custom styles for this template -->
     <link href="{%  static 'css/carousel.css'%}" rel="stylesheet">
 
@@ -59,13 +60,16 @@
 {% include 'navbar.html' %}
 <br>
 
-
     <!-- Carousel
     ================================================== -->
 
    {% block content %}
 
    {% endblock %}
+
+{% block content1 %}
+
+{% endblock %}
 
    {% block two %}
    {% endblock %}

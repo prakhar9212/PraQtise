@@ -58,21 +58,17 @@ def gk2015(request):
     return render(request,template,context)
 
 
-def fresh(request):
+def payment(request):
     context={}
-    template="fresh.html"
+    template="payment.html"
     return render(request,template,context)
 
-def joining(request):
-    context={}
-    template="joining.html"
-    return render(request,template,context)
 
-def notification(request):
-    context={}
-    template="notification.html"
-    return render(request,template,context)
 
+def choice_of_course(request):
+    context={}
+    template="choice_of_course.html"
+    return render(request,template,context)
 
 
 
