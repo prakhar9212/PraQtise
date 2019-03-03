@@ -1,6 +1,6 @@
 # PraQtise
 
-PracQtise is a not-for-profit educational initiative by Indian Government.
+PracQtise is a not-for-profit educational initiative by me.
 It is a global practicing community that fosters learning and friendly competition, built on top of the world’s 
 largest competitive programming platform. We have also built a large community of problem curators. Through this what 
 we are taking the initiative to boost the confidence of students who are giving competitive exams of various sector
